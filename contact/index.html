@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Gearcloud Labs</title>
+  <meta name="description" content="Email hello@gearcloudlabs.com or use the form. Booking link placeholder for Cal.com.">
+  <meta name="author" content="Rob Chang, Gearcloud Labs">
+  <link rel="canonical" href="https://gearcloudlabs.com/contact/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gearcloud Labs">
+  <meta property="og:title" content="Contact — Gearcloud Labs">
+  <meta property="og:description" content="Email hello@gearcloudlabs.com or use the form. Booking link placeholder for Cal.com.">
+  <meta property="og:url" content="https://gearcloudlabs.com/contact/">
+  <meta property="og:image" content="https://gearcloudlabs.com/assets/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — Gearcloud Labs">
+  <meta name="twitter:description" content="Email hello@gearcloudlabs.com or use the form. Booking link placeholder for Cal.com.">
+  <meta name="twitter:image" content="https://gearcloudlabs.com/assets/og-default.svg">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <!-- TODO: privacy-friendly analytics (Plausible or GoatCounter). Example:
+  <script defer data-domain="gearcloudlabs.com" src="https://plausible.io/js/script.js"></script>
+  or: <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  -->
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../">
+      <img class="logo-mark" src="../favicon.svg" width="28" height="28" alt="">
+      Gearcloud Labs
+    </a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav aria-label="Primary" id="nav-menu" class="nav-links-wrap">
+      <ul class="nav-links">
+        <li><a href="../">Home</a></li><li><a href="../offers/">Offers</a></li><li><a href="../products/">Labs</a></li><li><a href="../media/">Media</a></li><li><a href="../hospitality/">Hospitality</a></li><li><a href="../smb/">SMB</a></li><li><a href="../insights/">Insights</a></li><li><a href="../work/">Work</a></li><li><a href="../contact/" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="padding-bottom:1rem">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Tell us what you are trying to ship.</h1>
+      <p class="lede">Prefer email? <a href="mailto:hello@gearcloudlabs.com">hello@gearcloudlabs.com</a>. Prefer a calendar? Booking link below (placeholder until you set Cal.com or similar).</p>
+      <p><a class="btn btn-ghost" href="#TODO-cal-com-booking-link">TODO: replace with Cal.com (or similar) booking URL</a></p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap" style="max-width:640px">
+      <div class="todo">
+        <strong>TODO form endpoint:</strong> Form currently uses mailto fallback via JS. To use Formspree (or similar), set <code>data-endpoint</code> to your form URL and change <code>method="POST"</code> action &mdash; leave mailto as backup.
+      </div>
+      <!-- TODO: Formspree example:
+           <form action="https://formspree.io/f/YOUR_ID" method="POST">
+      -->
+      <form class="form card" id="contact-form" method="post"
+            action="#TODO-cal-com-booking-link"
+            data-endpoint="TODO-formspree-or-similar"
+            data-mailto="hello@gearcloudlabs.com">
+        <div class="row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <label for="company">Company</label>
+        <input id="company" name="company" autocomplete="organization">
+        <label for="segment">Segment</label>
+        <select id="segment" name="segment">
+          <option value="">Select&hellip;</option>
+          <option>Media / podcast / broadcast</option>
+          <option>Hospitality</option>
+          <option>SMB</option>
+          <option>Neuplay / PEG / LPTV</option>
+          <option>Other</option>
+        </select>
+        <label for="message">What do you want to ship?</label>
+        <textarea id="message" name="message" required></textarea>
+        <p style="margin-top:1rem">
+          <button class="btn btn-primary" type="submit">Send (mailto fallback)</button>
+        </p>
+        <p style="font-size:.85rem;color:var(--muted)">No backend required. Submitting opens your email client prefilled, until a Formspree-style endpoint is configured.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Gearcloud Labs</h4>
+      <p>AI that customers actually use &mdash; assistants, automations, and AI product features, shipped. Los Altos, CA &middot; remote.</p>
+      <p><a href="https://iliotech.com">Rob Chang &rarr; iliotech.com</a></p>
+    </div>
+    <div>
+      <h4>Offers</h4>
+      <ul>
+        <li><a href="../offers/#audit">AI Audit / Pilot</a></li>
+        <li><a href="../offers/#build">Scoped AI Build</a></li>
+        <li><a href="../offers/#fractional">Fractional CTO</a></li>
+        <li><a href="../neuplay/">Neuplay</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="../contact/">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/robchang1" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/robchang" rel="noopener">GitHub</a></li>
+        <li><a href="../sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:1.5rem;font-size:.8rem">
+    <p>&copy; Gearcloud Labs. No trackers on this site.</p>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>
