@@ -3,103 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Case study template: Newsroom caption pipeline — Gearcloud Labs</title>
-  <meta name="description" content="Template demonstrating how to document a caption pipeline engagement. Replace TODO fields with verified facts only.">
+  <title>Newsroom caption pipeline — Gearcloud Labs</title>
+  <meta name="description" content="How the Gearcloud caption pipeline turns newsroom video into SRT/SCC captions with names spelled right.">
   <meta name="author" content="Rob Chang, Gearcloud Labs">
   <link rel="canonical" href="https://gearcloudlabs.com/work/newsroom-caption-pipeline.html">
   <meta name="robots" content="index,follow">
-  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#faf8f4">
+  <meta property="og:type" content="website">
   <meta property="og:site_name" content="Gearcloud Labs">
-  <meta property="og:title" content="Case study template: Newsroom caption pipeline — Gearcloud Labs">
-  <meta property="og:description" content="Template demonstrating how to document a caption pipeline engagement. Replace TODO fields with verified facts only.">
+  <meta property="og:title" content="Newsroom caption pipeline — Gearcloud Labs">
+  <meta property="og:description" content="How the Gearcloud caption pipeline turns newsroom video into SRT/SCC captions with names spelled right.">
   <meta property="og:url" content="https://gearcloudlabs.com/work/newsroom-caption-pipeline.html">
   <meta property="og:image" content="https://gearcloudlabs.com/assets/og-default.svg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Case study template: Newsroom caption pipeline — Gearcloud Labs">
-  <meta name="twitter:description" content="Template demonstrating how to document a caption pipeline engagement. Replace TODO fields with verified facts only.">
+  <meta name="twitter:title" content="Newsroom caption pipeline — Gearcloud Labs">
+  <meta name="twitter:description" content="How the Gearcloud caption pipeline turns newsroom video into SRT/SCC captions with names spelled right.">
   <meta name="twitter:image" content="https://gearcloudlabs.com/assets/og-default.svg">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/styles.css">
-  
   <!-- TODO: privacy-friendly analytics (Plausible or GoatCounter). Example:
   <script defer data-domain="gearcloudlabs.com" src="https://plausible.io/js/script.js"></script>
-  or: <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   -->
 </head>
-
 <body>
-
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="../">
-      <img class="logo-mark" src="../favicon.svg" width="28" height="28" alt="">
-      Gearcloud Labs
-    </a>
+    <a class="brand" href="../">Gearcloud Labs</a>
     <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
     <nav aria-label="Primary" id="nav-menu" class="nav-links-wrap">
-      <ul class="nav-links">
-        <li><a href="../">Home</a></li><li><a href="../offers/">Offers</a></li><li><a href="../products/">Labs</a></li><li><a href="../media/">Media</a></li><li><a href="../hospitality/">Hospitality</a></li><li><a href="../smb/">SMB</a></li><li><a href="../insights/">Insights</a></li><li><a href="../work/" aria-current="page">Work</a></li><li><a href="../contact/">Contact</a></li>
-      </ul>
+      <ul class="nav-links"><li><a href="../work/" aria-current="page">Work</a></li><li><a href="../offers/">Services</a></li><li><a href="../insights/">Insights</a></li><li><a href="../about/">About</a></li><li><a href="../contact/">Contact</a></li></ul>
     </nav>
   </div>
 </header>
 
 <main id="main">
-  <article class="wrap prose">
-    <header class="article-header">
-      <p class="eyebrow">Case study &middot; template</p>
-      <h1>Newsroom caption pipeline</h1>
-    </header>
-    <div class="todo"><strong>TODO:</strong> Client name / anonymized label, dates, and outcomes &mdash; only with permission. Do not invent stats.</div>
-    <h2>Problem</h2>
-    <p>TODO: describe the captioning / turnaround / accessibility problem in the customer&rsquo;s words.</p>
-    <h2>Approach</h2>
-    <p>Drive-to-GPU ASR/OCR/LLM pipeline producing SRT/SCC, with lower-third OCR and proper-noun detection. Evals on glossary terms and person names.</p>
-    <h2>Outcome</h2>
-    <div class="proof-slot">TODO: verified outcome (e.g. turnaround time, error rate on proper nouns) &mdash; leave blank until real</div>
-    <h2>Stack (generic)</h2>
-    <ul>
-      <li>Object storage / Drive ingest</li>
-      <li>GPU ASR + OCR</li>
-      <li>LLM post-edit with glossary</li>
-      <li>SRT / SCC export</li>
-    </ul>
-    <p><a href="../offers/#caption">Caption pipeline install pricing &rarr;</a></p>
+
+  <article class="article">
+    <div class="wrap">
+      <header class="page-hero" style="padding-bottom:0">
+        <h1>Newsroom caption pipeline</h1>
+        <p class="byline">Project notes &middot; client details kept private</p>
+      </header>
+      <div class="prose">
+        <!-- TODO: add client label, dates, and outcomes only with written permission. Do not invent stats. -->
+        <p>Generic speech-to-text gets most words right and the names wrong. In news, the names are the part that matters.</p>
+        <h2>The approach</h2>
+        <p>Video lands in a shared drive and goes to a GPU box. Speech recognition runs alongside OCR on the lower thirds, so the on-screen spelling of a person or place can correct the transcript. An LLM pass then checks proper nouns against a glossary before export.</p>
+        <h2>What comes out</h2>
+        <p>SRT and SCC caption files, ready for broadcast and the web.</p>
+        <!-- TODO: Outcome section (turnaround time, proper-noun error rate) once verified. -->
+        <h2>The pieces</h2>
+        <ul>
+          <li>Drive or object-storage ingest</li>
+          <li>GPU speech recognition and OCR</li>
+          <li>LLM post-edit with a glossary</li>
+          <li>SRT and SCC export</li>
+        </ul>
+        <p><a class="arrow" href="../offers/#caption">Set this up for your newsroom</a></p>
+      </div>
+    </div>
   </article>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <h4>Gearcloud Labs</h4>
-      <p>AI that customers actually use &mdash; assistants, automations, and AI product features, shipped. Los Altos, CA &middot; remote.</p>
-      <p><a href="https://iliotech.com">Rob Chang &rarr; iliotech.com</a></p>
-    </div>
-    <div>
-      <h4>Offers</h4>
-      <ul>
-        <li><a href="../offers/#audit">AI Audit / Pilot</a></li>
-        <li><a href="../offers/#build">Scoped AI Build</a></li>
-        <li><a href="../offers/#fractional">Fractional CTO</a></li>
-        <li><a href="../neuplay/">Neuplay</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="../contact/">Contact</a></li>
-        <li><a href="https://www.linkedin.com/in/robchang1" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://github.com/robchang" rel="noopener">GitHub</a></li>
-        <li><a href="../sitemap.xml">Sitemap</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap" style="margin-top:1.5rem;font-size:.8rem">
-    <p>&copy; Gearcloud Labs. No trackers on this site.</p>
+  <div class="wrap footer-inner">
+    <p>Gearcloud Labs &middot; Los Altos, CA &middot; working remotely</p>
+    <ul class="footer-links"><li><a href="mailto:hello@gearcloudlabs.com">hello@gearcloudlabs.com</a></li> <li><a href="https://www.linkedin.com/in/robchang1" rel="noopener">LinkedIn</a></li> <li><a href="https://github.com/mica-agent" rel="noopener">GitHub</a></li> <li><a href="https://iliotech.com" rel="noopener">Rob&rsquo;s site</a></li></ul>
   </div>
 </footer>
 <script src="../js/main.js" defer></script>
-
 </body>
 </html>
